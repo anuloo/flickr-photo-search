@@ -1,0 +1,10 @@
+<md-dialog aria-label={{picture.title}}>
+    <form>
+        <md-dialog-content class="sticky-container">
+            <md-subheader class="md-sticky-no-effect">{{picture.title}}</md-subheader>
+            <md-card ng-click="cancel()">
+                <img ng-src="https://farm{{picture.farm}}.static.flickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg" alt="" class="md-card-image"/>
+            </md-card>
+        </md-dialog-content>
+    </form>
+</md-dialog>
